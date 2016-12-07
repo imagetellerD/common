@@ -22,4 +22,13 @@ service OmgService{
 	/** 图片描述*/
 	3: list<string> description
   ) throws (1: omg_common.OmgException e)
+
+
+  /** 根据用户输入检索文案*/
+  list<string> searchCreativeTexts(
+	/** 图片标签*/
+	1: list<string> tags,
+	/** 图片描述*/
+	2: list<string> description
+  ) throws (1: omg_common.OmgException e)
 }
