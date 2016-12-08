@@ -31,4 +31,13 @@ service OmgService{
 	/** 图片描述*/
 	2: list<string> description
   ) throws (1: omg_common.OmgException e)
+
+
+  /** 根据输入的图片url/data/文件目录，对图片进行解析并返回tags和descriptions */
+  omg_types.ImageAnalyzeResult analyzeImage(
+    /** 图片数据类型 */
+    1: omg_types.ImageDataType data_type,
+    /** 图片数据 */
+    2: omg_types.ImageData image_data,
+  )
 }
