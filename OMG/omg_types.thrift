@@ -12,6 +12,11 @@ enum ImageDataType {
   IDT_PATH = 2,
   IDT_BINARY = 3,
 }
+/** 图片分析返回语言类型 */
+enum ImageAnalyzeLanguage {
+  IAL_CN = 1,
+  IAL_EN = 2,
+}
 
 
 struct Test{

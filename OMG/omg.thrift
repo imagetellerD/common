@@ -39,5 +39,6 @@ service OmgService{
     1: omg_types.ImageDataType data_type,
     /** 图片数据 */
     2: omg_types.ImageData image_data,
+	3: omg_types.ImageAnalyzeLanguage language,
   )
 }
