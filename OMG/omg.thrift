@@ -18,7 +18,7 @@ service OmgService{
 	/** 生成诗词标题*/
 	1: string title,
 	/** 图片标签*/
-	2: list<string> tags,
+	2: list<omg_types.ImageTag> tags,
 	/** 图片描述*/
 	3: list<string> description
   ) throws (1: omg_common.OmgException e)
